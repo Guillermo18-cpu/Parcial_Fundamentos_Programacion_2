@@ -1,4 +1,5 @@
 # Disney+ Clone - Proyecto Base
+# Guillermo Sanchez y Edi Santiago Monzon Franco
 
 Este repositorio contiene una versión simplificada y limpia de la interfaz de Disney+, enfocada en el centrado de contenedores y una estructura de navegación funcional.
 

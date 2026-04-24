@@ -13,17 +13,17 @@
     <header>
         <nav>
             <ul>
-                <li><img src="./images/logo.png" alt="Disney + Logo"></li>
-                <li>DISNEY +</li>
-                <li>PARKS & TRAVEL</li>
-                <li>MOVIES</li>
-                <li>SHOP</li>
-                <li>MORE</li>
+                <li><a href="#"><img src="./images/logo.png" alt="Disney + Logo"></a></li>
+                <li><a href="#">DISNEY +</a></li>
+                <li><a href="#">PARKS & TRAVEL</a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">MORE</a></li>
 
                 <div class="second-bar">
-                    <li><button>Login</button></li>
+                    <li><button class="first-button">LOG IN</button></li>
                     <li><input type="text" placeholder="Search"></li>
-                    <li><button>Search</button></li>
+                    <li><button class="second-button"><img src="./images/search.png" alt="Search"></button></li>
                 </div>
             </ul>
         </nav>
@@ -32,8 +32,7 @@
     <main>
         <section>
             <img src="./images/snow-white.png" alt="title">
-            <p>Experience the magic of Disney with our exclusive content, including movies, TV shows, and original
-                programming. Join now and start streaming your favorite Disney classics and new releases!</p>
+            <p>Experience Snow White, now playing only in theaters!</p>
             <button>Get Tickets Now</button>
             <button>Learn More</button>
         </section>
@@ -189,29 +188,23 @@
         </section>
 
         <section class="disney-visa-section">
-            <div class="visa-container">
-                <div class="visa-image-wrapper">
-                    <img src="./images/more-background.jpeg" alt="Disney Visa Cards Display">
+            <div class="visa-content">
+                <h2 class="visa-title">GET MORE DISNEY EVERY DAY</h2>
+
+                <div class="offer-group">
+                    <h3 class="offer-label">Special Offer</h3>
+                    <p class="offer-main">Earn a <strong>$400</strong> <del>$300</del> statement credit.</p>
+                    <p class="offer-sub">New Disney® Premier Visa® Cardmembers only.</p>
                 </div>
 
-                <div class="visa-content">
-                    <h2 class="visa-title">GET MORE DISNEY EVERY DAY</h2>
-
-                    <div class="offer-group">
-                        <h3 class="offer-label">Special Offer</h3>
-                        <p class="offer-main">Earn a <strong>$400</strong> <del>$300</del> statement credit.</p>
-                        <p class="offer-sub">New Disney® Premier Visa® Cardmembers only.</p>
-                    </div>
-
-                    <div class="offer-group">
-                        <h3 class="offer-label">Special Vacation Financing</h3>
-                        <p class="offer-description">Enjoy 0% promotional APR for 6 months on select Disney vacation
-                            packages.</p>
-                        <p class="terms-link">Terms apply.</p>
-                    </div>
-
-                    <button class="visa-btn">LEARN MORE</button>
+                <div class="offer-group">
+                    <h3 class="offer-label">Special Vacation Financing</h3>
+                    <p class="offer-description">Enjoy 0% promotional APR for 6 months on select Disney vacation
+                        packages.</p>
+                    <p class="terms-link">Terms apply.</p>
                 </div>
+
+                <button class="visa-btn">LEARN MORE</button>
             </div>
         </section>
     </main>

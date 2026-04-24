@@ -6,8 +6,12 @@
 }
 
 body {
-  background: #f2f2f2;
   color: #222;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 header {
@@ -18,7 +22,7 @@ header {
 nav ul {
   display: flex;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 0px 10px 40px;
   list-style: none;
 }
 
@@ -28,43 +32,59 @@ nav ul li {
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #222;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .second-bar {
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.second-bar button {
-  padding: 5px 10px;
+.second-bar .first-button {
   border: 1px solid #ccc;
-  background: #f5f5f5;
-  font-size: 12px;
+  background: transparent;
+  font-size: 14px;
+  margin-right: -10px;
+  border: none;
+  font-weight: 700;
+  color: #222222;
+  cursor: pointer;
 }
 
-.second-bar button:last-child {
-  background: transparent;
+.second-bar .second-button {
+  background: white;
+  width: 47px;
+  height: 38px;
   border: none;
+  margin-left: -73px;
   cursor: pointer;
   font-size: 14px;
+  border-radius: 5px;
+}
+
+.second-bar .second-button img {
+  width: 25px;
 }
 
 .second-bar input {
-  height: 30px;
-  width: 180px;
+  height: 40px;
+  width: 287px;
   padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  border: 1px solid #757575;
+  background-color: #f5f5f5;
+  border-radius: 5px;
   font-size: 12px;
 }
 
 main > section:first-child {
   position: relative;
   height: 500px;
-  background: url("./images/banner-background.png") center/cover no-repeat;
+  background: url("./images/banner-background.png") center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +96,7 @@ main > section:first-child::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
 }
 
 main > section:first-child * {
@@ -110,7 +130,7 @@ main > section:first-child button:first-of-type {
 
 main > section:first-child button:last-of-type {
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   color: white;
 }
 
@@ -118,7 +138,7 @@ main > section:first-child button:last-of-type {
   background: #6b5cff;
   display: flex;
   gap: 20px;
-  padding: 40px;
+  padding: 30px 70px;
 }
 
 .card {
@@ -189,11 +209,12 @@ main > section:first-child button:last-of-type {
 .coming-soon {
   background: #eee;
   padding: 40px;
+  padding-bottom: 20px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .poster-grid {
@@ -216,8 +237,8 @@ main > section:first-child button:last-of-type {
 }
 
 .disney-parks {
-  background: #f5f5f5;
-  padding: 40px;
+  background: #eee;
+  padding: 20px 40px 40px 40px;
 }
 
 .parks-grid {
@@ -235,39 +256,33 @@ main > section:first-child button:last-of-type {
 }
 
 .park-content {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 
 .park-subtitle {
-  font-size: 16px;
-  font-family: "Playfair Display", serif; 
-  font-style: italic; 
-  color: #333;
+  font-size: 12px;
+  color: gray;
   margin-bottom: 10px;
 }
 
 .park-description {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 15px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .learn-more {
   font-size: 12px;
-  font-weight: 700;
-  text-decoration: underline;
-  color: #333;
+  text-decoration: none;
+  color: black;
 }
 
 .disney-visa-section {
   position: relative;
-  height: 500px;
-
-background: url("./images/more-background.jpeg") left center no-repeat;
-background-size: 80%;
-background-color: #cfe3e3; 
+  height: 630px;
+  background: url("./images/more-background.jpeg") left center no-repeat;
+  background-size: 100%;
+  background-color: #cfe3e3;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -283,72 +298,49 @@ background-color: #cfe3e3;
 .visa-content {
   position: relative;
   z-index: 2;
-  max-width: 420px;
+  max-width: 400px;
   text-align: center;
-  color: #1f4c8f; 
 }
 
 .visa-title {
-  font-size: 32px; 
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: 1px;
-  margin-bottom: 25px;
-  color: #1f4c8f;
+  margin-bottom: 20px;
+  color: #1a3c6e;
 }
 
 .offer-label {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.offer-main {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.offer-main strong {
-  font-weight: 800;
-}
-
-.offer-main del {
-  color: #888;
-  margin-left: 5px;
-}
-
-.offer-sub {
   font-size: 14px;
-  margin-bottom: 25px;
+  font-weight: bold;
 }
 
+.offer-main,
 .offer-description {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 13px;
 }
 
+.offer-sub,
 .terms-link {
-  font-size: 13px;
-  margin-top: 5px;
-  margin-bottom: 25px;
+  font-size: 11px;
+  color: #555;
 }
 
 .visa-btn {
-  margin-top: 15px;
-  padding: 14px 40px;
+  margin-top: 20px;
+  padding: 12px 30px;
   border: none;
-  background: #8e5bbf; 
+  background: #7a4fcf;
   color: white;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  border-radius: 25px;
+  font-size: 12px;
   cursor: pointer;
-}   
+}
 
 .offer-label {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .offer-main,
@@ -367,7 +359,7 @@ background-color: #cfe3e3;
   margin-top: 20px;
   padding: 12px 30px;
   border: none;
-  background: #7a4fcf; 
+  background: #7a4fcf;
   color: white;
   border-radius: 25px;
   font-size: 12px;
@@ -376,54 +368,18 @@ background-color: #cfe3e3;
 
 .main-footer {
   background: #fff;
-  padding: 40px 20px;
   text-align: center;
+  padding: 30px;
   font-size: 12px;
-  color: #666;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-logo img {
-  width: 80px;
-  margin-bottom: 20px;
 }
 
 .footer-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-.primary-links a {
-  color: #444;
+.footer-nav a {
+  margin: 0 10px;
   text-decoration: none;
-  font-size: 12px;
+  color: #333;
 }
-
-.primary-links a:hover {
-  text-decoration: underline;
-}
-
-.secondary-links a {
-  color: #222;
-  white-space: nowrap;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 11px;
-}
-
-.secondary-links a:hover {
-  text-decoration: underline;
-}
-
-.copyright {
-  margin-top: 15px;
-  font-size: 11px;
-  color: #444;
-}
+ 
